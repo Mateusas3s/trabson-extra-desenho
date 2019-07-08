@@ -4,7 +4,8 @@ import {
     View,
     StatusBar,
     Image,
-    TouchableHighlight
+    TouchableHighlight,
+    Text
 } from 'react-native';
 
 import BarraNavegacao from '../../barNavigation/BarraNavegacao';
@@ -12,6 +13,7 @@ import BarraNavegacao from '../../barNavigation/BarraNavegacao';
 //const logo = require('../../assets/logo.png')
 const imgComida1 = require('../../../assets/comida1.jpeg');
 const imgBebida1 = require('../../../assets/bebida1.jpg');
+const combo = require('../../../assets/download.jpeg');
 
 export default class ScreenPrincipal extends React.Component {
   render() {
@@ -39,13 +41,15 @@ export default class ScreenPrincipal extends React.Component {
               <Image style={styles.imgMenu} source={imgBebida1} />
             </TouchableHighlight>
 
-            <TouchableHighlight 
-              onPress = {() =>{
-                
-              }}
-            />
 
           </View>
+            <TouchableHighlight 
+              onPress = {() =>{
+                console.log("Ad");
+              }}
+            >
+              <Image style={styles.imgMenu} source={combo} />
+            </TouchableHighlight>
 
         </View>
       </View>
