@@ -1,19 +1,46 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  Navigator
+} from 'react-native-deprecated-custom-components'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+import screenPrincipal from './src/screens/screenPrincipal/screenPrincipal'
+import ScreenPrincipal from './src/screens/screenPrincipal/screenPrincipal';
+//import CenaCliente from './src/components/CenaCliente'
+//import CenaContato from './src/components/CenaContato'
+//import CenaEmpresa from './src/components/CenaEmpresa'
+//import CenaServico from './src/components/CenaServico'
+
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <Navigator
+        initialRoute={{ id: 'principal' }}
+        renderScene={(route, navigator) => {
+
+          switch(route.id){
+
+            case 'principal':
+              return(<ScreenPrincipal navigator={navigator} />);
+              
+            //case 'cliente':
+              //return(<CenaCliente navigator={navigator} />);
+
+            //case 'contato':
+              //return(<CenaContato navigator={navigator} />);
+
+            //case 'empresa':
+              //return(<CenaEmpresa navigator={navigator} />);
+
+            //case 'servico':
+              //return(<CenaServico navigator={navigator} />);
+
+            default:
+              return false;
+          }
+
+        }}
+      />
+    );
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
