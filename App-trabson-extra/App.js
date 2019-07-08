@@ -25,14 +25,11 @@ export default class App extends React.Component {
             case 'comida1':
               return(<ScreenComida1 navigator={navigator} />);
 
-           // case 'bebida1':
-              //return(<CenaContato navigator={navigator} />);
+            case 'bebida1':
+              return(<ScreenBebida1 navigator={navigator} />);
 
-            //case 'empresa':
-              //return(<CenaEmpresa navigator={navigator} />);
-
-            //case 'servico':
-              //return(<CenaServico navigator={navigator} />);
+            //case 'combo1':
+              //return(<ScreenCombo1 navigator={navigator} />);
 
             default:
               return false;

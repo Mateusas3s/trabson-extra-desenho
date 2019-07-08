@@ -13,6 +13,7 @@ export default class Comida1 extends React.Component {
     return (
       <View>
        
+       
         <View style={styles.cabecalho}>
           <Text style={styles.txtTitulo}>Misto Quente</Text>
         </View>
