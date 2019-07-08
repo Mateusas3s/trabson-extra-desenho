@@ -19,9 +19,9 @@ Este projeto fora dividido nos seguintes módulos.
 
 ### Factory Method
 
-Este padrão foi aplicado no projeto de forma que o component App.js funciona como um interface e o método de criação 
+Este padrão foi aplicado no projeto de forma que o componente App funciona como uma interface e o método de fabricação é estendido para a Screens que é a"fábrica" de uma Snack, ou seja, se desejo apresentar os detalhes de uma ComidaX na tela a ScreenComidaX irá fabricar essa tela. 
 
 
 ### Composite
 
-What things you need to install the software and how to install them
+Este padrão foi aplicado no projeto de forma que a Screens pode combinar várias telas ou simplesmente apresentar uma única tela, ou seja, se desejo apresentar o ComboX que é composta pela ComidaX e pela BebidaX irei renderizar a ScreenComboX que combina essas duas telas, ScreenComidaX e ScreenBebidaX.
