@@ -3,20 +3,25 @@ import {
     StyleSheet,
     View,
     Text,
-    Image
+    Image,
+    ScrollView,
+    StatusBar,
 } from 'react-native';
 import Bebida1 from '..//screenBebida1/ScreenBebida1';
 import Comida1 from '../screenComida1/ScreenComida1';
 
 const imgComida1 = require('../../../assets/comida1.jpeg');
+import BarraNavegacao from '../../barNavigation/BarraNavegacao';
 
-export default class Combo1 extends React.Component {
+export default class ScreenCombo1 extends React.Component {
   render() {
     return (
-      <View>
+      <ScrollView>
+        <StatusBar backgroundColor= '#ccc' />
+        <BarraNavegacao voltar navigator={this.props.navigator} />
         <Bebida1/>
         <Comida1/>
-      </View>
+      </ScrollView>
     );
   }
 }
