@@ -31,3 +31,13 @@ Este padrão foi aplicado no projeto de forma que a Screens pode combinar vária
 O diagrama de sequência é a solução dinâmica de modelagem em UML mais relevante, pois incide sobre o período entre a fase inicial e a fase final de um projeto. No Diagrama abaixo, foi representado o fluxo de compra de um produto.
 
 ![Sequence_Diagram](docs/Diagrama_sequencia.png)
+
+# Diagrama de sequência
+
+Abaixo é demonstrado o fluxo de compra de um produto e de um combo
+
+### Compra Simples
+![CompraSimples](docs/CompraSimples.gif)
+
+### Compra Combo
+![CompraSimples](docs/CompraCombo.gif)
