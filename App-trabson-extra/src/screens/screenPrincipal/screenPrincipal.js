@@ -11,7 +11,7 @@ import BarraNavegacao from '../../barNavigation/BarraNavegacao';
 
 //const logo = require('../../assets/logo.png')
 const imgComida1 = require('../../../assets/comida1.jpeg');
-const imgComida2 = require('../../../assets/comida2.jpeg');
+const imgBebida1 = require('../../../assets/bebida1.jpg');
 
 export default class ScreenPrincipal extends React.Component {
   render() {
@@ -33,10 +33,10 @@ export default class ScreenPrincipal extends React.Component {
 
             <TouchableHighlight
               onPress={() => {
-                this.props.navigator.push({ id: 'comida2' })
+                this.props.navigator.push({ id: 'bebida1' })
               }}
             >
-              <Image style={styles.imgMenu} source={imgComida2} />
+              <Image style={styles.imgMenu} source={imgBebida1} />
             </TouchableHighlight>
 
           </View>
