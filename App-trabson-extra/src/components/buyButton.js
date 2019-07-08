@@ -6,24 +6,20 @@ import {
     Image,
     ScrollView,
     StatusBar,
+    TouchableHighlight,
+    Alert
 } from 'react-native';
-import Bebida1 from '../../snacks/bebida1/Bebida1';
-import Comida1 from '../../snacks/comida1/Comida1';
-import BuyButton from '../../components/buyButton';
 
-const imgComida1 = require('../../../assets/comida1.jpeg');
-import BarraNavegacao from '../../barNavigation/BarraNavegacao';
-
-export default class ScreenCombo1 extends React.Component {
+export default class BuyButton extends React.Component {
   render() {
     return (
-      <ScrollView>
-        <StatusBar backgroundColor= '#ccc' />
-        <BarraNavegacao voltar navigator={this.props.navigator} />
-        <Bebida1/>
-        <Comida1/>
-        <BuyButton></BuyButton>
-      </ScrollView>
+      <View style = {{alignContent:'center',alignItems:'center'}}>
+        <TouchableHighlight style={{marginTop: 20, marginBottom:40 }} onPress = {()=>{
+            Alert.alert("Compra finalizada com sucesso!");
+        }}>
+        <Text style={{fontSize:20,color:'#b9c941'}}> Finalizar compra </Text>
+        </TouchableHighlight>
+      </View>
     );
   }
 }
