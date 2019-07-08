@@ -9,7 +9,6 @@ import {
 
 import BarraNavegacao from '../../barNavigation/BarraNavegacao';
 
-//const logo = require('../../assets/logo.png')
 const imgComida1 = require('../../../assets/comida1.jpeg');
 const imgBebida1 = require('../../../assets/bebida1.jpg');
 

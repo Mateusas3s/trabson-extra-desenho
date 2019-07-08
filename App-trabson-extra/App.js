@@ -5,6 +5,8 @@ import {
 
 import ScreenPrincipal from './src/screens/screenPrincipal/screenPrincipal';
 import ScreenComida1 from './src/screens/screenComida1/ScreenComida1';
+import ScreenBebida1 from './src/screens/screenBebida1/ScreenBebida1';
+
 //import CenaContato from './src/components/CenaContato'
 //import CenaEmpresa from './src/components/CenaEmpresa'
 //import CenaServico from './src/components/CenaServico'

@@ -6,7 +6,7 @@ import {
     Image
 } from 'react-native';
 
-const imgBebida1 = require('../../../assets/bebida1.jpeg');
+const imgBebida1 = require('../../../assets/bebida1.jpg');
 
 export default class Bebida1 extends React.Component {
   render() {
