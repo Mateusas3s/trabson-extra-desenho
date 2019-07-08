@@ -39,6 +39,12 @@ export default class ScreenPrincipal extends React.Component {
               <Image style={styles.imgMenu} source={imgBebida1} />
             </TouchableHighlight>
 
+            <TouchableHighlight 
+              onPress = {() =>{
+                
+              }}
+            />
+
           </View>
 
         </View>
