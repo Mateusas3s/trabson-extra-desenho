@@ -7,6 +7,7 @@ import {
 
 import BarraNavegacao from '../../barNavigation/BarraNavegacao';
 import Bebida1 from '../../snacks/bebida1/Bebida1';
+import BuyButton from '../../components/buyButton';
 
 export default class ScreenBebida1 extends React.Component {
   render() {
@@ -16,8 +17,8 @@ export default class ScreenBebida1 extends React.Component {
               <StatusBar backgroundColor= '#ccc' />
             
               <BarraNavegacao voltar navigator={this.props.navigator} />
-            
               <Bebida1 />
+              <BuyButton></BuyButton>
               
             </View>
         </ScrollView>

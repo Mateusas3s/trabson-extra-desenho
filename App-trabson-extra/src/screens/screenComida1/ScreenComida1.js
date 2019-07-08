@@ -7,6 +7,7 @@ import {
 
 import BarraNavegacao from '../../barNavigation/BarraNavegacao';
 import Comida1 from '../../snacks/comida1/Comida1';
+import BuyButton from '../../components/buyButton';
 
 export default class ScreenComida1 extends React.Component {
   render() {
@@ -18,6 +19,7 @@ export default class ScreenComida1 extends React.Component {
                 <BarraNavegacao voltar navigator={this.props.navigator} />
 
                 <Comida1 />
+                <BuyButton></BuyButton>
 
             </View>
         </ScrollView>
