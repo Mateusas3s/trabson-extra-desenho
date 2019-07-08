@@ -7,8 +7,8 @@ import {
     ScrollView,
     StatusBar,
 } from 'react-native';
-import Bebida1 from '..//screenBebida1/ScreenBebida1';
-import Comida1 from '../screenComida1/ScreenComida1';
+import Bebida1 from '../../snacks/bebida1/Bebida1';
+import Comida1 from '../../snacks/comida1/Comida1';
 
 const imgComida1 = require('../../../assets/comida1.jpeg');
 import BarraNavegacao from '../../barNavigation/BarraNavegacao';

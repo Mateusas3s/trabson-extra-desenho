@@ -44,7 +44,7 @@ export default class ScreenPrincipal extends React.Component {
           </View>
             <TouchableHighlight 
               onPress = {() =>{
-                console.log("Ad");
+                this.props.navigator.push({ id: 'combo1' })
               }}
             >
               <Image style={styles.imgMenu} source={combo} />
